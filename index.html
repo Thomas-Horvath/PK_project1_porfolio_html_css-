@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szemantikus gyakorlás</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <ul class="navList-left js-navList">
+            <li class="navItem"><a class="navLink" href="#home">Kezdőlap</a></li>
+            <li class="navItem"><a class="navLink" href="#about">Rólam</a></li>
+        </ul>
+        <div class="logo">Logo</div>
+        <ul class="navList-right js-navList">
+            <li class="navItem"><a class="navLink" href="#portfolio">Portfólió</a></li>
+            <li class="navItem"><a class="navLink" href="#contact">Kapcsolat</a></li>
+        </ul>
+        <span class="material-symbols-outlined menu">
+            menu
+            </span>
+    </nav>
+
+
+
+    <main>
+        <section class="home" id="home">
+            <h1>Gipsz Jakab</h1>
+            <h2>Frontend fejlesztő</h2>
+        </section>
+
+
+
+
+        <section class="about" id="about">
+            <header class="sectionHeader">
+                <h2>Rólam</h2>
+            </header>
+            <div class="aboutContainer">
+                <div class="content">Ez a tartalom</div>
+                <div class="img">Ez egy kép</div>
+            </div>
+        </section>
+
+
+
+
+        <section class="portolio" id="portfolio">
+            <header class="sectionHeader">
+                <h2>Portfólió</h2>
+            </header>
+            <div class="cardContainer">
+                <div class="card">card</div>
+                <div class="card">card</div>
+                <div class="card">card</div>
+                <div class="card">card</div>
+                <div class="card">card</div>
+                <div class="card">card</div>
+            </div>
+        </section>
+
+
+
+        <section class="contact" id="contact">
+            <header class="sectionHeader">
+                <h2>Kapcsolat</h2>
+            </header>
+            <div class="contactContainer">
+                <form action="#">
+                    <label class="label">Név
+                        <input type="text" class="input" placeholder="Név">
+                    </label>
+                    <label class="label">Email
+                        <input type="text" class="input" placeholder="email@host.domain">
+                    </label>
+                    <label class="label">Üzenet
+                        <textarea class="textarea" placeholder="Üzenet"></textarea>
+                    </label>
+                    <button class="btn" type="button">Küldés</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <p>&copy;2024, Thomas</p>
+    </footer>
+
+
+
+    <a class="pageUp" href="#">
+        <span class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </a>
+
+
+
+<script src="./app.js"></script>
+</body>
+
+</html>
