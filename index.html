@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szemantikus gyakorlás</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" >
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,17 +15,15 @@
 
     <nav class="nav">
         <ul class="navList-left js-navList">
-            <li class="navItem"><a class="navLink" href="#home">Kezdőlap</a></li>
+            <li class="navItem"><a class="navLink" href="#home">Főoldal</a></li>
             <li class="navItem"><a class="navLink" href="#about">Rólam</a></li>
         </ul>
-        <div class="logo">Logo</div>
+        <div class="logo"><img src="./img/logo.png" alt="Logo"></div>
         <ul class="navList-right js-navList">
             <li class="navItem"><a class="navLink" href="#portfolio">Portfólió</a></li>
             <li class="navItem"><a class="navLink" href="#contact">Kapcsolat</a></li>
         </ul>
-        <span class="material-symbols-outlined menu">
-            menu
-            </span>
+        <span class="material-symbols-outlined menu">menu</span>
     </nav>
 
 
@@ -33,6 +32,8 @@
         <section class="home" id="home">
             <h1>Gipsz Jakab</h1>
             <h2>Frontend fejlesztő</h2>
+            <a href="#contact" class="btn homeBtn">Küldj üzenetet</a>
+       
         </section>
 
 
@@ -44,7 +45,9 @@
             </header>
             <div class="aboutContainer">
                 <div class="content">Ez a tartalom</div>
-                <div class="img">Ez egy kép</div>
+
+                <img class="img" src="./img/profilePic.svg" alt="">
+
             </div>
         </section>
 
@@ -104,7 +107,7 @@
 
 
 
-<script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>

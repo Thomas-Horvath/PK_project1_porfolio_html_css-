@@ -1,3 +1,14 @@
+:root {
+    --transition: .4s ease;
+    --main-yellow: #FFC107;
+    --main-green: #00BFA6;
+    --text-color-light: #e2e2e2;
+    --text-color-dark: #222222;
+}
+
+
+
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -23,7 +34,7 @@ main {
 
 body {
     background: #222;
-    color: #e2e2e2;
+    color: var(--text-color-light);
 }
 
 section { 
@@ -44,6 +55,27 @@ section {
     align-items: center;
     font-size: 3rem;
 }
+.btn {
+    background: var(--main-green);
+    color: var(--text-color-light);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: .7rem 1.3rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background: gold;
+    color: var(--text-color-dark);
+}
+
+.btn:active {
+    transform: scale(.9);
+}
 
 
 
@@ -54,7 +86,7 @@ section {
 
 /*  nav  */
 .nav {
-    background: turquoise;
+    background: var(--main-green);
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -71,24 +103,31 @@ section {
 }
 
 .navLink {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
     height: 100%;
     display: flex;
     align-items: center;
     padding: .5rem;
     transition: .3s ease;
-    color: black;
+    color: var(--text-color-light);
 }
 
 .navLink:hover {
     background: wheat;
+    color: #222;
 }
 
 .logo {
-    font-size: 3rem;
-    font-weight: 600;
-    padding: .5rem 0;
-    color: gold;
+ 
+   
+  
+   display: flex;
+   align-items: center;
+}
+.logo img {
+height: 4rem;
+
 }
 
 .menu {
@@ -110,39 +149,44 @@ section {
     margin-bottom: 1rem;
     text-align: center;
 }
+.home h2 {
+    font-size: 2.5rem;
+}
+.homeBtn {
+    margin-top: 5rem;
+}
 
 
 /*  about section */
 
 
 .aboutContainer {
-    background: #ccccccaa;
+   width: 100%;
     margin: 3rem;
-    width: 80%;
+ /*    width: 80%; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
     padding: 3rem;
 }
 
 .content {
-    width: 600px;
+    width: 60%;
     height: 400px;
-    background: wheat;
+    background: #f5deb3;
     color: #222;
     text-align: center;
     padding: 3rem;
 }
 
 .img {
-    width: 400px;
-    height: 400px;
-    background: wheat;
+   width:450px;
+   
     color: #222;
     text-align: center;
-    padding: 3rem;
+   
 }
 
 
@@ -175,7 +219,7 @@ section {
 
 /*  contact section */
 .contactContainer {
-    width: 80%;
+    width: 65%;
     padding: 2rem;
     background: #555;
     margin: 3rem;
@@ -193,13 +237,13 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 70%;
     font-size: 1.2rem;
 }
 
 .input,
 .textarea {
-    width: 80%;
+    width: 60%;
     padding: 1rem;
     font-size: 1rem;
     border-radius: 10px;
@@ -208,32 +252,14 @@ form {
 }
 
 .textarea {
-    height: 300px
+    height: 250px;
+    width: 75%;
 }
 
-.btn {
-    background: turquoise;
-    color: black;
-    font-size: 1.3rem;
-    padding: .7rem 1.3rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px black;
-    cursor: pointer;
-    transition: .3s ease;
-}
-
-.btn:hover {
-    background: gold;
-}
-
-.btn:active {
-    transform: scale(.9);
-}
 
 /*  footer */
 .footer {
-    background: turquoise;
+    background: var(--main-green);
     height: 8rem;
     display: flex;
     justify-content: center;
@@ -274,6 +300,9 @@ form {
 @media screen and (max-width: 721px) {
     .nav {
         margin-top: 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
     }
     
     .navList-left, 
@@ -283,9 +312,9 @@ form {
         top: 0;
         left: 0;
         height: 150px;
-        width: 75%;
+        width: 100%;
         align-items: center;
-        background: turquoise;
+        background: var(--main-green);
         transform: translateX(-100%);
         padding-top: 1rem;
     }
@@ -295,20 +324,25 @@ form {
     }
 
     .menu {
-        display: block;
-        position: absolute;
-        right: 30px;
-        top: 12px;
+        display: flex;
+        align-items: center;
         font-size: 2rem;
-        color: #eee;
+        color: var(--text-color-light);
         cursor: pointer;
         background: #555;
         padding: .4rem;
-        border: 1px solid #eee;
+        border: 2px solid #eee;
         border-radius: 5px;
         user-select: none;
+        height: 3rem;
+        width: 3rem;
+        transition: var(--transition);
+        z-index: 100;
     }
-
+.menu:hover {
+    color: var(--main-yellow);
+    border-color: var(--main-yellow);
+}
     .active {
         transform: translateX(0);
     }
