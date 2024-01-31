@@ -37,8 +37,9 @@ body {
     color: var(--text-color-light);
 }
 
-section { 
+section {
     width: 100%;
+    min-height: 100vh;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -55,6 +56,7 @@ section {
     align-items: center;
     font-size: 3rem;
 }
+
 .btn {
     background: var(--main-green);
     color: var(--text-color-light);
@@ -69,7 +71,7 @@ section {
 }
 
 .btn:hover {
-    background: gold;
+    background: var(--main-yellow);
     color: var(--text-color-dark);
 }
 
@@ -106,8 +108,10 @@ section {
     font-size: 1.7rem;
     font-weight: 600;
     height: 100%;
+    width: 8.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: .5rem;
     transition: .3s ease;
     color: var(--text-color-light);
@@ -119,14 +123,12 @@ section {
 }
 
 .logo {
- 
-   
-  
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 }
+
 .logo img {
-height: 4rem;
+    height: 4rem;
 
 }
 
@@ -135,23 +137,26 @@ height: 4rem;
 }
 
 
+
+
 /*  home section */
 .home {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .home h1 {
     font-size: 6rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
+
 .home h2 {
     font-size: 2.5rem;
 }
+
 .homeBtn {
     margin-top: 5rem;
 }
@@ -161,32 +166,26 @@ height: 4rem;
 
 
 .aboutContainer {
-   width: 100%;
+    width: 100%;
     margin: 3rem;
- /*    width: 80%; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    padding: 3rem;
 }
 
 .content {
-    width: 60%;
-    height: 400px;
-    background: #f5deb3;
-    color: #222;
-    text-align: center;
+    width: 50%;
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
     padding: 3rem;
+    text-align: justify;
 }
 
 .img {
-   width:450px;
-   
-    color: #222;
-    text-align: center;
-   
+    width: 30rem;
+    padding: 3rem;
 }
 
 
@@ -196,20 +195,20 @@ height: 4rem;
 /*  portfolio section */
 
 .cardContainer {
-    background: #ccccccaa;
-    width: 80%;
+    background: var(--main-green);
+    width: 90%;
     margin: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .card {
-    width: 25rem;
-    height: 15rem;
+    width: 18rem;
+    height: 25rem;
     background: wheat;
     text-align: center;
     padding: 3rem;
@@ -267,7 +266,7 @@ form {
     padding: 1rem;
     color: #222;
     font-size: 1.5rem;
-    border-top: 2px solid gold;
+    border-top: 2px solid var(--main-yellow);
 }
 
 
@@ -279,14 +278,14 @@ form {
     background: #222;
     padding: .7rem;
     border-radius: 50%;
-    border: 2px solid gold;
+    border: 2px solid var(--main-yellow);
 }
 
 
 .pageUp span {
     font-size: 2.2rem;
     font-weight: 600;
-    color: gold;
+    color: var(--main-yellow);
 }
 
 
@@ -304,8 +303,8 @@ form {
         align-items: center;
         padding: 0 2rem;
     }
-    
-    .navList-left, 
+
+    .navList-left,
     .navList-right {
         flex-direction: column;
         position: absolute;
@@ -320,7 +319,7 @@ form {
     }
 
     .navList-right {
-        top: 150px;
+        top: 149px;
     }
 
     .menu {
@@ -339,11 +338,18 @@ form {
         transition: var(--transition);
         z-index: 100;
     }
-.menu:hover {
-    color: var(--main-yellow);
-    border-color: var(--main-yellow);
-}
+
+    .menu:hover {
+        color: var(--main-yellow);
+        border-color: var(--main-yellow);
+    }
+
     .active {
         transform: translateX(0);
     }
+
+    .aboutContainer {
+        flex-direction: column-reverse;
+    }
+
 }
