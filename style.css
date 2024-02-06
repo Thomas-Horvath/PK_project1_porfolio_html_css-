@@ -70,6 +70,9 @@ section {
     box-shadow: 5px 5px 10px black;
     cursor: pointer;
     transition: .3s ease;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .btn:hover {
@@ -189,7 +192,15 @@ section {
     padding: 3rem;
     text-align: justify;
 }
-
+.content h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.content p {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
 .img {
     width: 30rem;
     padding: 3rem;
