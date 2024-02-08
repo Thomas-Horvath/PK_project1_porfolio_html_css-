@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 :root {
     --transition: .4s ease;
     --main-yellow: #FFC107;
+    --main-yellow-20: #FFC107bb;
     --main-green: #00BFA6;
     --text-color-light: #e2e2e2;
     --text-color-dark: #222222;
@@ -37,7 +41,9 @@ main {
 body {
     background: #222;
     color: var(--text-color-light);
+    font-family: 'Ubuntu', sans-serif;
 }
+
 
 section {
     width: 100%;
@@ -115,14 +121,14 @@ section {
     font-size: 1.7rem;
     font-weight: 600;
     height: 100%;
-    width: 8.5rem;
+    width: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: .5rem;
     transition: .3s ease;
     color: var(--text-color-light);
-    position: relative;
+    user-select: none;
 }
 
 .navLink:hover {
@@ -159,16 +165,21 @@ section {
 }
 
 .home h1 {
-    font-size: 6rem;
-    margin-bottom: 1rem;
+    font-size: 8rem;
 }
 
-.home h2 {
-    font-size: 2.5rem;
+.home p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+.home h3 {
+    font-size: 2rem;
+    font-family: 'Protest Riot', sans-serif;
+    color: var(--main-yellow);
 }
 
 .homeBtn {
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 
@@ -177,7 +188,7 @@ section {
 
 .aboutContainer {
     width: 100%;
-    margin: 3rem;
+    margin: 3rem 3rem 7rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -206,28 +217,36 @@ section {
     padding: 3rem;
 }
 
+
+
+/*  skills section */
 .skills {
     width: 100%;
     text-align: center;
-    padding: 5rem 1rem 1rem;
+    padding: 6rem 1rem 1rem;
 
 }
 
 .skills h2 {
-    font-size: 2.7rem;
+    font-size: 2.9rem;
 }
 
 .skillsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
     gap: 2rem;
 }
 
 .skillIcon {
     width: 6rem;
     margin: 0 1rem;
+    background: var(--main-yellow-20);
+    padding: 1rem;
+    border: 4px solid var(--text-color-light);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000;
 }
 
 
@@ -237,7 +256,7 @@ section {
 
 .cardContainer {
     background: var(--main-green);
-    width: 90%;
+    max-width: 1400px;
     margin: 3rem;
     display: flex;
     justify-content: space-evenly;
@@ -294,6 +313,7 @@ section {
 
 .gridWrapper {
     padding: 4rem;
+    max-width: 1400px;
     margin: auto;
     height: auto;
     display: grid;
@@ -356,6 +376,7 @@ form {
     border-radius: 10px;
     border: none;
     margin-top: .5rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .textarea {
@@ -367,7 +388,7 @@ form {
 /*  footer */
 .footer {
     background: var(--main-green);
-    height: 8rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -467,4 +488,7 @@ form {
         flex-direction: column-reverse;
     }
 
+    .cardContainer {
+        padding: 2rem ;
+    }
 }

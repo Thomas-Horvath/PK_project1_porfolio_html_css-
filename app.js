@@ -34,8 +34,8 @@ datas.forEach(data => {
             <h2 class="title">${data.title}</h2>
              <p class="text">${data.text}</p>
              <div class="buttonGroup">
-                <a href="" class="btn">demo</a>
-                <a href="" class="btn">code</a>
+                <a href="" class="btn">Demo</a>
+                <a href="" class="btn">Code</a>
             </div>
         </div>
     </div>
