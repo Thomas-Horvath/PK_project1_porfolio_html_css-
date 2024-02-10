@@ -1,4 +1,4 @@
-import datas from './data.js';  // adatok importálása egy másik .js fájlból
+import cardDatas from './data.js';  // adatok importálása egy másik .js fájlból
 
 const button = document.querySelector('.menu');
 const navList = document.querySelectorAll('.js-navList');
@@ -35,7 +35,7 @@ window.onscroll = () => {
 /*  kártyák renderelése */
 let container = document.querySelector('.cardContainer');
 
-datas.forEach(data => {
+cardDatas.forEach(data => {
     container.innerHTML +=
         `
     <div class="card">

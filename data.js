@@ -1,4 +1,4 @@
-const datas = [
+const cardDatas = [
     {
         imageUrl: "./img/projects/database.svg",
         alt: "database-icon",
@@ -37,4 +37,4 @@ const datas = [
     },
 ]
 
-export default datas;
+export default cardDatas;

@@ -217,7 +217,7 @@ section {
     align-items: center;
 }
 
-.content {
+.aboutContent {
     width: 50%;
     color: var(--text-color-light);
     display: flex;
@@ -226,18 +226,18 @@ section {
     text-align: start;
 }
 
-.content h3 {
+.aboutContent h3 {
     font-size: 3rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.content p {
+.aboutContent p {
     font-size: 1.3rem;
     margin-bottom: 1.2rem;
 }
 
-.img {
+.aboutImg {
     width: 30rem;
     padding: 3rem;
 }
@@ -444,10 +444,10 @@ form {
 
 /*  media queries */
 @media screen and (max-width: 1040px) {
-    .img {
+    .aboutImg {
         padding: 0 3rem ;
     }
-    .content p { 
+    .aboutContent p { 
         font-size: 1rem;
     }
     .cardContainer {
@@ -519,7 +519,7 @@ form {
     .aboutContainer {
         flex-direction: column-reverse;
     }
-    .content {
+    .aboutContent {
         width: 100%;
     }
 
@@ -538,7 +538,7 @@ form {
         font-size: 1.5rem;
         padding: 0 2rem;
     }
-    .img {
+    .aboutImg {
         width: 60%;
     }
     .aboutContainer {
@@ -560,7 +560,7 @@ form {
     .about h3 {
         font-size: 2rem;
     }
-    .content {
+    .aboutContent {
         padding: 3rem 1rem;
     }
     .skillIcon {
