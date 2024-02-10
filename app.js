@@ -1,16 +1,19 @@
-import datas from './data.js';  // import datas of cards from other JavaScript file
+import datas from './data.js';  // adatok importálása egy másik .js fájlból
 
 const button = document.querySelector('.menu');
 const navList = document.querySelectorAll('.js-navList');
 const links = document.querySelectorAll('.navLink');
 
 /* hamburger menu */
+
+/* a hamburger ikonra kattintva megjelenik - eltűnik a menü*/
 button.addEventListener('click', () => {
     navList.forEach((e) => {
         e.classList.toggle('active');
     })
 });
 
+/*  ha valamelyik linkre kattintunk akkor eltűnik a menü */
 links.forEach((link) => {
     link.addEventListener('click', () => {
         navList.forEach((e) => {
@@ -20,9 +23,16 @@ links.forEach((link) => {
 });
 
 
+/* görgetésre altűnik a menü */
+window.onscroll = () => {
+    navList.forEach((e) => {
+        e.classList.remove('active');
+    })
+}
 
 
-/*  cards render */
+
+/*  kártyák renderelése */
 let container = document.querySelector('.cardContainer');
 
 datas.forEach(data => {
