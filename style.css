@@ -17,11 +17,7 @@
     --black: #000;
 
     --shadow: #555555aa;
-
 }
-
-
-
 
 html {
     box-sizing: border-box;
@@ -33,11 +29,10 @@ html {
     padding: 0;
     box-sizing: inherit;
     user-select: none;
-}
-
-a {
     text-decoration: none;
 }
+
+
 
 li {
     list-style: none;
@@ -57,7 +52,6 @@ body {
 
 section {
     width: 100%;
-    min-height: 100vh;
     padding-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -183,6 +177,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 100vh;
 }
 
 .home h1 {
@@ -235,6 +230,7 @@ section {
 .aboutContent p {
     font-size: 1.3rem;
     margin-bottom: 1.2rem;
+    line-height: 2rem;
 }
 
 .aboutImg {
@@ -248,12 +244,7 @@ section {
 .skills {
     width: 100%;
     text-align: center;
-    padding: 6rem 0 1rem;
-
-}
-
-.skills h2 {
-    font-size: 2.9rem;
+    padding: 4rem 0 1rem;
 }
 
 .skillsContainer {
@@ -290,6 +281,7 @@ section {
     flex-wrap: wrap;
     gap: 3rem;
     padding: 2rem 10rem;
+    border-radius: 5px;
 }
 
 .card {
@@ -334,7 +326,7 @@ section {
 
 
 
-/* --------  gallery section  - GRID practice -----------*/
+/* --------  gallery section  -----------*/
 .gallery img {
     width: 100%;
     height: 100%;
@@ -363,7 +355,7 @@ section {
     padding: 2rem;
     background: var(--main-bg-lighter);
     margin: 3rem;
-
+border-radius: 5px;
 }
 
 form {
@@ -377,7 +369,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-  width: 100%;
+    width: 100%;
     font-size: 1.2rem;
 }
 
@@ -391,7 +383,6 @@ form {
     border-radius: 5px;
     border: none;
     margin-top: .5rem;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .input:focus,
@@ -408,32 +399,64 @@ form {
 /*  footer */
 .footer {
     background: var(--main-green);
-    height: 15rem;
+    min-height: 15rem;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     color: var(--text-color-dark);
     font-size: 1rem;
     border-top: 2px solid var(--main-yellow);
 }
-
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+.socialIcons  {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.socialIcons i, .footerInfo a{
+    color: var(--text-color-dark);
+    transition:  all .4s;
+}
+.socialIcons i:hover , .footerInfo a:hover{
+    color: var(--main-yellow);
+    transform: scale(1.2);
+}
+.footerInfo {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.4rem;
+    color: var(--text-color-dark);
+}
 
 /*  pageUp icon */
 .pageUp {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--main-bg);
-    padding: .7rem;
+    padding: .75rem;
     border-radius: 50%;
     border: 2px solid var(--main-yellow);
 }
 
 
-.pageUp span {
-    font-size: 2.2rem;
-    font-weight: 600;
+.pageUp i {
+    font-size: 1.8rem;
     color: var(--main-yellow);
 }
 
@@ -445,18 +468,23 @@ form {
 /*  media queries */
 @media screen and (max-width: 1040px) {
     .aboutImg {
-        padding: 0 3rem ;
+        padding: 0 3rem;
     }
-    .aboutContent p { 
+
+    .aboutContent p {
         font-size: 1rem;
     }
+
     .cardContainer {
         padding: 2rem;
     }
-    .input, .textarea {
+
+    .input,
+    .textarea {
         width: 90%;
     }
 }
+
 @media screen and (max-width: 938px) {
     .nav {
         margin-top: 0;
@@ -489,6 +517,7 @@ form {
     .menu {
         display: flex;
         align-items: center;
+        justify-content: center;
         font-size: 2rem;
         color: var(--text-color-light);
         cursor: pointer;
@@ -519,6 +548,7 @@ form {
     .aboutContainer {
         flex-direction: column-reverse;
     }
+
     .aboutContent {
         width: 100%;
     }
@@ -526,21 +556,27 @@ form {
     .cardContainer {
         padding: 2rem;
     }
+
     .gridWrapper {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
     }
+
 }
+
 @media screen and (max-width: 788px) {
     .home h1 {
         font-size: 5rem;
     }
+
     .home h3 {
         font-size: 1.5rem;
         padding: 0 2rem;
     }
+
     .aboutImg {
         width: 60%;
     }
+
     .aboutContainer {
         margin: 3rem;
     }
@@ -548,34 +584,56 @@ form {
     .cardContainer {
         margin: 3rem 0;
         gap: 1rem;
+        border-radius: 0;
     }
+
     .gridWrapper {
         padding: 1rem;
     }
+    .footerInfo {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        white-space: nowrap;
+    }
 }
+
 @media screen and (max-width: 560px) {
     .img {
         width: 80%;
     }
+
     .about h3 {
         font-size: 2rem;
     }
+
     .aboutContent {
         padding: 3rem 1rem;
     }
+
+    .aboutImg {
+        width: 80%;
+    }
+
     .skillIcon {
         width: 5rem;
     }
+
     .cardContainer {
         padding: 2rem 0;
     }
+
     .gridWrapper {
         grid-template-columns: 1fr;
     }
+
     .contactContainer {
         margin: 3rem 0;
-       width: 100%;
+        width: 100%;
+        border-radius: 0;
     }
+
     .skillsContainer {
         gap: 1rem;
     }

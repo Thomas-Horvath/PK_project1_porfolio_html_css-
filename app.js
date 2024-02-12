@@ -10,7 +10,9 @@ const links = document.querySelectorAll('.navLink');
 button.addEventListener('click', () => {
     navList.forEach((e) => {
         e.classList.toggle('active');
-    })
+    });
+    button.classList.toggle('fa-bars');
+    button.classList.toggle('fa-xmark');
 });
 
 /*  ha valamelyik linkre kattintunk akkor eltűnik a menü */
@@ -18,17 +20,20 @@ links.forEach((link) => {
     link.addEventListener('click', () => {
         navList.forEach((e) => {
             e.classList.toggle('active');
-        })
+        });
+        button.classList.toggle('fa-bars');
+        button.classList.toggle('fa-xmark');
     })
 });
 
 
+// TODO: a fenti funkciók miatt az ikonok cseréje nem működöik megfelelően ha a görgetésre eltüntetem a menüt.
 /* görgetésre altűnik a menü */
-window.onscroll = () => {
+/* window.onscroll = () => {
     navList.forEach((e) => {
         e.classList.remove('active');
-    })
-}
+    });
+} */
 
 
 
