@@ -19,5 +19,5 @@
 4. szín kontrasztok
 5. betűtípus
 6. felhasználói élmény
-    - navigációnál megjelenik melyik oldalon járunk
+    - navigációnál megjelenik melyik oldalon járunk (csak linkre kattintásnál működik, görgetésnél még nem)
 7. reszponzivitás megvalósítása 
