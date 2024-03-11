@@ -116,6 +116,7 @@ section {
     margin-top: 2rem;
     height: 4rem;
     box-shadow: 0 4px 7px var(--shadow);
+    z-index: 100;
 }
 
 .navList-left,
@@ -184,23 +185,71 @@ section {
 
 .home h1 {
     font-size: 8rem;
+    position: relative;
+    animation: animationTop 0.5s ease;
 }
 
 .home p {
     font-size: 2rem;
     margin-bottom: 4rem;
+    position: relative;
+    animation: animationLeft 0.5s ease;
 }
 
 .home h3 {
     font-size: 2rem;
     font-family: 'Protest Riot', sans-serif;
     color: var(--main-yellow);
+    position: relative;
+    animation: animationRight 0.5s ease;
 }
 
 .homeBtn {
     margin-top: 4rem;
+    position: relative;
+    animation: animationBottom 0.5s ease;
 }
 
+@keyframes animationTop {
+    from {
+        top: -600px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+@keyframes animationBottom {
+    from {
+        bottom: -600px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+@keyframes animationLeft {
+    from {
+        left: -600px;
+        opacity: 0
+    }
+    to {
+       left: 0;
+        opacity: 1
+    }
+}
+@keyframes animationRight {
+    from {
+        right: -600px;
+        opacity: 0
+    }
+    to {
+       right: 0;
+        opacity: 1
+    }
+}
 
 /* ----------------- about section --------------------*/
 

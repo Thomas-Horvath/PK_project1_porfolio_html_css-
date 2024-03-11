@@ -9,6 +9,7 @@
 - grid elrendezés
 - css változók 
 - media query-k
+- keyframe-ek
 - desktop first megvalósítás
 
 ### Szempontok amiket néztem: 
