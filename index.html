@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szemantikus gyakorlás</title>
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
-    <!-- font awesome -->
+
+    <!-- FONT AWSOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-
-
-    <link rel="stylesheet" href="style.css">
+    <!-- MAIN STYLESHEET -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -24,7 +23,7 @@
             <li class="navItem"><a draggable="false" class="navLink " href="#about">Rólam</a></li>
             <li class="navItem"><a draggable="false" class="navLink" href="#skills">Ismereteim</a></li>
         </ul>
-        <div class="logo"><img src="./img/logo.png" alt="Logo"></div>
+        <div class="logo"><img src="./assets/img/logo.png" alt="Logo"></div>
         <ul class="navList-right js-navList">
             <li class="navItem"><a draggable="false" class="navLink" href="#portfolio">Portfólió</a></li>
             <li class="navItem"><a draggable="false" class="navLink" href="#gallery">Galéria</a></li>
@@ -36,22 +35,18 @@
 
 
     <main>
+        <!-- HOME SECTION -->
         <section class="home" id="home">
             <h1>Gipsz Jakab</h1>
             <p>Frontend fejlesztő</p>
             <h3>Kódolj szépséget, hozz létre élményt!</h3>
             <a href="#contact" class="btn homeBtn"><i class="fa-solid fa-paper-plane"></i> Küldj üzenetet</a>
-
         </section>
 
-
-
-
+        <!-- ABOUT SECTION -->
         <section class="about" id="about">
-
             <h2 class="sectionHeader">Rólam</h2>
-
-            <article class="aboutContainer">
+            <div class="aboutContainer">
                 <div class="aboutContent">
                     <h3>Szia, Gipsz Jakab vagyok</h3>
                     <p> Egy elkötelezett frontend fejlesztő, aki szenvedélyesen foglalkozik
@@ -66,29 +61,29 @@
                         ahol a modern frontend technológiák, mint a React, Vue.js vagy Angular segítségével hoztam létre
                         dinamikus és reszponzív felhasználói felületeket.</p>
                 </div>
+                <img class="aboutImg" src="./assets/img/profilePic.svg" alt="profil kép">
+            </div>
 
-                <img class="aboutImg" src="./img/profilePic.svg" alt="profil kép">
+        </section>
 
-            </article>
-            <article class="skills" id="skills">
-                <h2 class="sectionHeader">Ismereteim</h2>
-                <div class="skillsContainer">
-                    <img class="skillIcon" src="./img/skills/html.svg" alt="html logo">
-                    <img class="skillIcon" src="./img/skills/css-3.svg" alt="html logo">
-                    <img class="skillIcon" src="./img/skills/javascript.svg" alt="html logo">
-                    <img class="skillIcon" src="./img/skills/bootstrap-4.svg" alt="html logo">
-                    <img class="skillIcon" src="./img/skills/react.svg" alt="html logo">
-                    <img class="skillIcon" src="./img/skills/github.svg" alt="html logo">
-                    <img class="skillIcon" src="./img/skills/git.svg" alt="html logo">
-                    <img class="skillIcon" src="./img/skills/visual-studio-code.svg" alt="html logo">
-                </div>
-
-            </article>
+        <!--  SKILLS SECTION -->
+        <section class="skills" id="skills">
+            <h2 class="sectionHeader">Ismereteim</h2>
+            <div class="skillsContainer">
+                <img draggable="false" class="skillIcon" src="./assets/img/skills/html.svg" alt="html logo">
+                <img draggable="false" class="skillIcon" src="./assets/img/skills/css-3.svg" alt="css logo">
+                <img draggable="false" class="skillIcon" src="./assets/img/skills/javascript.svg" alt="javascript logo">
+                <img draggable="false" class="skillIcon" src="./assets/img/skills/bootstrap-4.svg" alt="bootstrap logo">
+                <img draggable="false" class="skillIcon" src="./assets/img/skills/react.svg" alt="react logo">
+                <img draggable="false" class="skillIcon" src="./assets/img/skills/github.svg" alt="github logo">
+                <img draggable="false" class="skillIcon" src="./assets/img/skills/git.svg" alt="git logo">
+                <img draggable="false" class="skillIcon" src="./assets/img/skills/visual-studio-code.svg" alt="vs code logo">
+            </div>
         </section>
 
 
 
-
+        <!-- PORTFOLIO SECTION -->
         <section class="portolio" id="portfolio">
 
             <h2 class="sectionHeader">Portfólió</h2>
@@ -97,44 +92,46 @@
             </div>
         </section>
 
+
+        <!-- GALLERY SECTION -->
         <section class="gallery" id="gallery">
             <h2 class="sectionHeader">Galéria</h2>
 
             <div class="gridWrapper">
                 <div class="item1">
-                    <img src="./img/gallery/img1.jpg" alt="galéria kép">
+                    <img src="./assets/img/gallery/img1.jpg" alt="galéria kép1">
                 </div>
                 <div class="item2">
-                    <img src="./img/gallery/img2.jpg" alt="galéria kép">
+                    <img src="./assets/img/gallery/img2.jpg" alt="galéria kép2">
                 </div>
                 <div class="item3">
-                    <img src="./img/gallery/img3.jpg" alt="galéria kép">
+                    <img src="./assets/img/gallery/img3.jpg" alt="galéria kép3">
                 </div>
                 <div class="item4">
-                    <img src="./img/gallery/img4.jpg" alt="galéria kép">
+                    <img src="./assets/img/gallery/img4.jpg" alt="galéria kép4">
                 </div>
                 <div class="item5">
-                    <img src="./img/gallery/img5.jpg" alt="galéria kép">
+                    <img src="./assets/img/gallery/img5.jpg" alt="galéria kép5">
                 </div>
                 <div class="item6">
-                    <img src="./img/gallery/img6.jpg" alt="galéria kép">
+                    <img src="./assets/img/gallery/img6.jpg" alt="galéria kép6">
                 </div>
                 <div class="item7">
-                    <img src="./img/gallery/img7.jpg" alt="galéria kép">
+                    <img src="./assets/img/gallery/img7.jpg" alt="galéria kép7">
                 </div>
                 <div class="item8">
-                    <img src="./img/gallery/img8.jpg" alt="galéria kép">
+                    <img src="./assets/img/gallery/img8.jpg" alt="galéria kép8">
                 </div>
                 <div class="item9">
-                    <img src="./img/gallery/img9.jpg" alt="galéria kép">
+                    <img src="./assets/img/gallery/img9.jpg" alt="galéria kép9">
                 </div>
             </div>
         </section>
 
+
+        <!-- CONTACT SECTION -->
         <section class="contact" id="contact">
-
             <h2 class="sectionHeader">Kapcsolat</h2>
-
             <div class="contactContainer">
                 <form action="#">
                     <label class="label">Név
@@ -153,11 +150,11 @@
     </main>
 
 
-
+    <!-- FOOTER SECTION -->
     <footer class="footer">
         <div class="footerContent">
             <div class="socialIcons">
-               <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
@@ -171,14 +168,14 @@
     </footer>
 
 
-
-    <a class="pageUp" href="#">
+    <!-- PAGEUP ICON -->
+    <a class="pageUp" href="#home" title="Ugrás a lap tetejére">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
 
 
 
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./scripts/app.js"></script>
 </body>
 
 </html>

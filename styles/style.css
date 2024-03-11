@@ -19,6 +19,8 @@
     --shadow: #555555aa;
 }
 
+
+/* css reset */
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -33,7 +35,7 @@ html {
 }
 
 
-
+/* general styles */
 li {
     list-style: none;
 }
@@ -48,7 +50,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     min-width: 300px;
 }
-
 
 section {
     width: 100%;
@@ -102,7 +103,8 @@ section {
 
 
 
-/*  nav  */
+/*   --------------- nav -------------- */
+
 .nav {
     background: var(--main-green);
     display: flex;
@@ -170,7 +172,7 @@ section {
 
 
 
-/*  home section */
+/* ------------ home section ----------------*/
 .home {
     display: flex;
     flex-direction: column;
@@ -200,8 +202,7 @@ section {
 }
 
 
-/*  about section */
-
+/* ----------------- about section --------------------*/
 
 .aboutContainer {
     width: 100%;
@@ -240,7 +241,7 @@ section {
 
 
 
-/*  skills section */
+/*  -------------------- skills section -----------------------*/
 .skills {
     width: 100%;
     text-align: center;
@@ -396,7 +397,7 @@ form {
 }
 
 
-/*  footer */
+/* ---------------------- footer ----------------------------*/
 .footer {
     background: var(--main-green);
     min-height: 15rem;
