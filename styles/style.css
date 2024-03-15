@@ -396,7 +396,10 @@ section {
     padding: 1rem;
     justify-content: space-between;
 }
-
+.portfolioBtn {
+    padding: .5rem;
+    gap: .5rem;
+}
 .contentWrapper {
     height: 100%;
     padding: 1rem;

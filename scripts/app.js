@@ -44,8 +44,8 @@ cardDatas.forEach(data => {
             <h2 class="title">${data.title}</h2>
              <p class="text">${data.text}</p>
              <div class="buttonGroup">
-                <a href="" class="btn">Demo</a>
-                <a href="" class="btn">Code</a>
+                <a href="#" class="btn portfolioBtn"><i class="fa-solid fa-laptop-code"></i>Demo</a>
+                <a href="#" class="btn portfolioBtn"><i class="fa-brands fa-github"></i>Code</a>
             </div>
         </div>
     </div>
