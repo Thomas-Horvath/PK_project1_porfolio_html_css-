@@ -1,3 +1,6 @@
+// A portfólió projektek adatait tartalmazó adatfájl melyet az app.js fájlba importálva
+// rendereljük a projekt kártyákat.
+
 const cardDatas = [
     {
         imageUrl: "./assets/img/projects/database.svg",

@@ -85,6 +85,7 @@ section {
     display: flex;
     gap: 1rem;
     align-items: center;
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -215,38 +216,45 @@ section {
         top: -600px;
         opacity: 0
     }
+
     to {
         top: 0;
         opacity: 1
     }
 }
+
 @keyframes animationBottom {
     from {
         bottom: -600px;
         opacity: 0
     }
+
     to {
         bottom: 0;
         opacity: 1
     }
 }
+
 @keyframes animationLeft {
     from {
         left: -600px;
         opacity: 0
     }
+
     to {
-       left: 0;
+        left: 0;
         opacity: 1
     }
 }
+
 @keyframes animationRight {
     from {
         right: -600px;
         opacity: 0
     }
+
     to {
-       right: 0;
+        right: 0;
         opacity: 1
     }
 }
@@ -255,7 +263,7 @@ section {
 
 .aboutContainer {
     width: 100%;
-    margin: 3rem 3rem 7rem;
+    margin: 3rem 3rem 0;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -283,8 +291,14 @@ section {
     line-height: 2rem;
 }
 
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
 .aboutImg {
-    width: 30rem;
+    width: 35rem;
     padding: 3rem;
 }
 
@@ -298,17 +312,18 @@ section {
 }
 
 .skillsContainer {
-    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 3rem auto;
     gap: 2rem;
+    padding: 0 2rem;
 }
 
 .skillIcon {
     width: 6rem;
+    height: 6rem;
     margin: 0 1rem;
     background: var(--main-yellow-20);
     padding: 1rem;
@@ -317,8 +332,28 @@ section {
     box-shadow: 4px 4px 10px #000;
 }
 
+.skill-item {
+    transition: transform .4s ease;
+}
 
+.skill-item p {
+    font-size: 1.2rem;
+    margin-top: .3rem;
+    font-weight: bold;
+    transition: all .4s ease;
+}
 
+.skill-item:hover {
+    transform: scale(1.2);
+}
+
+.skill-item:hover p {
+    color: var(--main-green);
+}
+
+.skill-item:hover .skillIcon {
+    border-color: var(--main-green);
+}
 
 /* ----------------  portfolio section  - Flex-box practice --------------------*/
 
@@ -478,13 +513,17 @@ form {
 .socialIcons i,
 .footerInfo a {
     color: var(--text-color-dark);
-    transition: all .4s;
+    transition: all .4s ease;
 }
 
-.socialIcons i:hover,
+.socialIcons i:hover {
+    transform: scale(1.1);
+}
+
 .footerInfo a:hover {
-    color: var(--main-yellow);
-    transform: scale(1.2);
+    text-decoration: underline;
+    transform: scale(1.1);
+    text-underline-offset: 5px;
 }
 
 .footerInfo {
@@ -525,6 +564,7 @@ form {
 /*  media queries */
 @media screen and (max-width: 1040px) {
     .aboutImg {
+        width: 30rem;
         padding: 0 3rem;
     }
 
@@ -667,20 +707,31 @@ form {
         width: 80%;
     }
 
+    .sectionHeader {
+        font-size: 3.5rem;
+    }
+
     .about h3 {
         font-size: 2rem;
     }
 
     .aboutContent {
-        padding: 3rem 1rem;
+        padding: 3rem 1rem 0;
     }
 
     .aboutImg {
         width: 80%;
     }
 
+    .button-container {
+        flex-direction: column;
+
+
+    }
+
     .skillIcon {
         width: 5rem;
+        height: 5rem;
     }
 
     .cardContainer {
@@ -698,6 +749,6 @@ form {
     }
 
     .skillsContainer {
-        gap: 1rem;
+        gap: 2rem 1rem;
     }
 }
